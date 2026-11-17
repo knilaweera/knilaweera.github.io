@@ -106,7 +106,8 @@
   .pin { width: 13px; height: 13px; border-radius: 50%; background: var(--deep); border: 2px solid rgba(255,255,255,.45); position: relative; }
   .step.now .pin { background: var(--bright); border-color: var(--bright); box-shadow: 0 0 0 5px rgba(61,123,247,.25); animation: glow 2.8s ease-in-out infinite; }
   @keyframes glow { 50% { box-shadow: 0 0 0 9px rgba(61,123,247,0); } }
-  .step.future .pin { border-style: dashed; border-color: var(--teal); }
+  .step.future .pin { border: 0; background: repeating-conic-gradient(var(--teal) 0deg 26deg, transparent 26deg 45deg);
+    -webkit-mask: radial-gradient(circle, transparent 4.4px, #000 4.6px); mask: radial-gradient(circle, transparent 4.4px, #000 4.6px); }
   .yr { font-size: 13px; font-weight: 600; color: rgba(238,242,248,.5); margin: 18px 0 6px; font-variant-numeric: tabular-nums; }
   .step.now .yr { color: #7fa6f9; }
   .step.future .yr { color: #6fd3cc; }
