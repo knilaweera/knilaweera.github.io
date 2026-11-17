@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kunthaka Nilaweera</title>
+<meta name="description" content="Kunthaka Nilaweera. Technical program and delivery leadership for strategic federal and defense accounts.">
+<meta property="og:title" content="Kunthaka Nilaweera, Program &amp; Delivery Leadership">
+<meta property="og:description" content="I lead complex technical programs for strategic federal and defense accounts, from first requirement to final delivery.">
+<meta property="og:image" content="assets/headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --surface: #ffffff;
+    --ink: #111418;
+    --muted: #5d6470;
+    --faint: #9aa0a9;
+    --line: #e3e3df;
+    --accent: #1f3a68;
+    --accent-soft: #e8edf5;
+    --bright: #3d7bf7;
+    --teal: #2aa7a0;
+    --deep: #0f1c33;
+  }
+  body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 20; background: linear-gradient(90deg, var(--accent), var(--bright) 55%, var(--teal)); }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 400 16px/1.6 Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 32px; }
+
+  header.top { border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+  .name { font-weight: 600; letter-spacing: -0.01em; text-decoration: none; }
+  .links { display: flex; gap: 24px; font-size: 14px; }
+  .links a { color: var(--muted); text-decoration: none; }
+  .links a:hover { color: var(--ink); }
+
+  .intro { padding: 72px 0 64px; position: relative; overflow: hidden; }
+  .intro::before { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(600px 360px at 85% 0%, rgba(61,123,247,.10), transparent 70%),
+      radial-gradient(500px 300px at 100% 60%, rgba(42,167,160,.07), transparent 70%); }
+  .intro::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background-image: radial-gradient(rgba(17,20,24,.07) 1px, transparent 1px); background-size: 22px 22px;
+    -webkit-mask-image: linear-gradient(200deg, #000 0%, transparent 45%); mask-image: linear-gradient(200deg, #000 0%, transparent 45%); }
+  .intro .wrap { position: relative; z-index: 1; }
+  .intro .wrap { display: grid; grid-template-columns: 260px 1fr; gap: 56px; align-items: start; }
+  .photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 15%; border-radius: 6px; display: block; box-shadow: 10px 10px 0 0 var(--accent-soft), 10px 10px 0 1px rgba(61,123,247,.25); }
+  .photo .meta { margin-top: 16px; font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+  .photo .meta strong { color: var(--ink); font-weight: 600; }
+  .clearance { color: var(--bright); font-weight: 600; }
+  .intro .wrap { row-gap: 28px; grid-template-rows: auto 1fr; }
+  .intro .wrap > .photo { grid-column: 1; grid-row: 1; }
+  .intro .wrap > .hero-text { grid-column: 2; grid-row: 1 / span 2; }
+  .intro .wrap > .seeking { grid-column: 1; grid-row: 2; }
+  .seeking { margin-top: 0; padding-top: 24px; border-top: 1px solid var(--line); position: relative; }
+  .seeking::before { content: ""; position: absolute; top: -1px; left: 0; width: 40px; height: 2px; background: linear-gradient(90deg, var(--bright), var(--teal)); }
+  .seeking h2 { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; }
+  .seeking ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .seeking li { position: relative; padding-left: 16px; font-size: 14px; line-height: 1.5; color: var(--ink); }
+  .seeking li::before { content: ""; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--bright); }
+  .seeking li:nth-child(even)::before { background: var(--teal); }
+  .targets { margin: 20px 0 0; font-size: 13.5px; line-height: 1.55; color: var(--muted); }
+  .targets span { display: block; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin-bottom: 4px; }
+  .role { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 18px; }
+  h1 { font-family: "Source Serif 4", Georgia, serif; font-weight: 500; font-size: clamp(30px, 3.6vw, 42px); line-height: 1.18; letter-spacing: -0.015em; margin: 0 0 20px; max-width: 680px; }
+  .lede { color: var(--muted); font-size: 17px; max-width: 620px; margin: 0 0 40px; }
+
+  .caps { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); counter-reset: cap; }
+  .cap { padding: 20px 24px 20px 0; border-bottom: 1px solid var(--line); counter-increment: cap; position: relative; transition: background .2s; }
+  .cap::before { content: counter(cap, decimal-leading-zero); display: block; font-size: 11.5px; font-weight: 600; letter-spacing: .08em; color: var(--bright); margin-bottom: 6px; font-variant-numeric: tabular-nums; }
+  .cap::after { content: ""; position: absolute; left: 0; bottom: -1px; height: 2px; width: 0; background: linear-gradient(90deg, var(--bright), var(--teal)); transition: width .35s ease; }
+  .cap:nth-child(even)::after { left: 24px; }
+  .cap:hover::after { width: 48px; }
+  .cap:nth-child(odd) { border-right: 1px solid var(--line); }
+  .cap:nth-child(even) { padding-left: 24px; }
+  .cap h2 { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
+  .cap p { margin: 0; font-size: 14.5px; color: var(--muted); }
+
+  .proof { display: flex; flex-wrap: wrap; gap: 8px 10px; margin-top: 28px; }
+  .tag { font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 4px; background: var(--surface); border: 1px solid var(--line); }
+  .tag.key { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+
+  .journey { background: var(--deep); color: #eef2f8; padding: 72px 0 80px; position: relative; overflow: hidden; }
+  .journey::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(700px 400px at 90% 0%, rgba(61,123,247,.22), transparent 70%), radial-gradient(500px 300px at 0% 100%, rgba(42,167,160,.14), transparent 70%); }
+  .journey .wrap { position: relative; }
+  .section-label { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #7fa6f9; margin: 0 0 8px; }
+  .journey h2 { font-family: "Source Serif 4", Georgia, serif; font-weight: 500; font-size: 28px; letter-spacing: -0.01em; margin: 0 0 44px; color: #fff; }
+  .timeline { display: grid; grid-template-columns: repeat(5, 1fr); position: relative; }
+  .timeline::before { content: ""; position: absolute; left: 0; right: 0; top: 6px; height: 1px; background: linear-gradient(90deg, rgba(255,255,255,.18), rgba(127,166,249,.6) 70%, rgba(255,255,255,.18)); }
+  .step { padding-right: 20px; position: relative; transition: transform .25s ease; }
+  .step::after { content: ""; position: absolute; left: 0; bottom: -14px; height: 2px; width: 0; background: linear-gradient(90deg, var(--bright), var(--teal)); transition: width .35s ease; }
+  .step:hover { transform: translateY(-4px); }
+  .step:hover::after { width: 48px; }
+  .step .pin { transition: border-color .25s, box-shadow .25s; }
+  .step:hover .pin { border-color: #7fa6f9; box-shadow: 0 0 0 4px rgba(61,123,247,.18); }
+  .step h3, .step .yr { transition: color .25s; }
+  .step:hover .yr { color: #7fa6f9; }
+  .pin { width: 13px; height: 13px; border-radius: 50%; background: var(--deep); border: 2px solid rgba(255,255,255,.45); position: relative; }
+  .step.now .pin { background: var(--bright); border-color: var(--bright); box-shadow: 0 0 0 5px rgba(61,123,247,.25); animation: glow 2.8s ease-in-out infinite; }
+  @keyframes glow { 50% { box-shadow: 0 0 0 9px rgba(61,123,247,0); } }
+  .step.future .pin { border-style: dashed; border-color: var(--teal); }
+  .yr { font-size: 13px; font-weight: 600; color: rgba(238,242,248,.5); margin: 18px 0 6px; font-variant-numeric: tabular-nums; }
+  .step.now .yr { color: #7fa6f9; }
+  .step.future .yr { color: #6fd3cc; }
+  .step h3 { font-size: 15.5px; font-weight: 600; margin: 0; line-height: 1.35; color: #fff; }
+  .org { font-size: 14px; color: rgba(238,242,248,.62); }
+  .step p { font-size: 14px; color: rgba(238,242,248,.72); margin: 10px 0 0; }
+
+  .headed { margin-top: 56px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,.12); display: grid; grid-template-columns: 200px 1fr; gap: 8px 40px; position: relative; }
+  .headed::before { content: ""; position: absolute; top: -1px; left: 0; width: 56px; height: 2px; background: linear-gradient(90deg, var(--bright), var(--teal)); }
+  .headed-label { margin: 6px 0 0; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #6fd3cc; grid-row: span 2; }
+  .headed-statement { margin: 0; font-family: "Source Serif 4", Georgia, serif; font-weight: 500; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.3; letter-spacing: -0.01em; color: #fff; max-width: 680px; }
+  .headed-note { margin: 8px 0 0; font-size: 15px; color: rgba(238,242,248,.68); max-width: 640px; }
+  @media (max-width: 860px) { .headed { grid-template-columns: 1fr; margin-top: 44px; padding-top: 32px; } .headed-label { grid-row: auto; margin: 0 0 6px; } }
+
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  .photo, .intro .role, .intro h1, .intro .lede, .caps, .proof { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+  .intro .role { animation-delay: .08s; } .intro h1 { animation-delay: .16s; } .intro .lede { animation-delay: .26s; } .caps { animation-delay: .36s; } .proof { animation-delay: .46s; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+  .btns { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+  .btn { font-size: 13.5px; font-weight: 500; padding: 8px 18px; border-radius: 5px; text-decoration: none; background: var(--accent); border: 1px solid var(--accent); color: #fff; line-height: 1.4; transition: background .2s, border-color .2s; }
+  .btn:hover { background: var(--bright); border-color: var(--bright); }
+  footer { background: var(--deep); color: rgba(238,242,248,.45); border-top: 1px solid rgba(255,255,255,.08); padding: 24px 0 32px; font-size: 13px; color: var(--faint); }
+
+  @media (max-width: 860px) {
+    .intro .wrap { grid-template-columns: 1fr; grid-template-rows: none; gap: 32px; }
+    .photo { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: center; }
+    .photo .meta { margin-top: 0; }
+    .intro .wrap > .photo, .intro .wrap > .hero-text, .intro .wrap > .seeking { grid-column: 1; grid-row: auto; }
+    .seeking { margin-top: 8px; }
+    .timeline { grid-template-columns: 1fr; gap: 28px; padding-left: 2px; }
+    .timeline::before { left: 6px; right: auto; top: 0; bottom: 0; width: 1px; height: auto; }
+    .step { display: grid; grid-template-columns: 13px 1fr; column-gap: 20px; padding: 0; }
+    .pin { grid-row: span 4; margin-top: 4px; }
+    .yr { margin-top: 0; }
+  }
+  @media (max-width: 600px) {
+    .wrap { padding: 0 16px; }
+    .links a.hide-sm { display: none; }
+    .intro { padding: 40px 0 48px; }
+    .caps { grid-template-columns: 1fr; }
+    .cap, .cap:nth-child(even) { padding: 16px 0; border-right: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="name" href="#">Kunthaka Nilaweera</a>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="wrap">
+      <div class="photo">
+        <img src="assets/headshot.jpg" alt="Kunthaka Nilaweera">
+        <div class="meta">
+          <strong>Senior Architect, Broadcom</strong><br>
+          New York City &amp; Washington, DC areas<br>
+          <span class="clearance">Active Security Clearance</span>
+          <div class="btns">
+            <a class="btn" href="mailto:kpnilaw@gmail.com">Email</a>
+            <!-- LinkedIn: add <a class="btn" href="PROFILE_URL" target="_blank" rel="noopener">LinkedIn</a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="role">Program Leadership · Delivery Oversight · Executive Advisory</p>
+        <h1>I lead complex technical programs for strategic federal and defense accounts, from first requirement to final delivery.</h1>
+        <p class="lede">As lead technical advisor, I drive requirements, oversee workstreams and implementation partners, and keep senior leadership aligned on progress and risk. 12+ years delivering into classified, air-gapped, and IL4–IL6 environments means I know what the plan actually takes.</p>
+
+        <div class="caps">
+          <div class="cap">
+            <h2>Cross-organization delivery</h2>
+            <p>Coordinate engineering teams, customer stakeholders, and implementation partners across a five-organization enterprise account.</p>
+          </div>
+          <div class="cap">
+            <h2>Requirements &amp; strategy</h2>
+            <p>Translate mission and compliance needs (DISA STIG, NIST) into clear requirements and adoption strategies that grew platform consumption.</p>
+          </div>
+          <div class="cap">
+            <h2>Modernization roadmaps</h2>
+            <p>Multi-year plans that sequence infrastructure refresh, tooling, and migration around dependencies and end-of-support deadlines.</p>
+          </div>
+          <div class="cap">
+            <h2>Executive advisory</h2>
+            <p>Brief SES and flag-officer leadership on milestones, risk, and the decisions that unblock delivery.</p>
+          </div>
+          <div class="cap">
+            <h2>Operating rhythm</h2>
+            <p>One clear view of workstreams, owners, risks, and status, backed by RACI, tiered support models, and regular reporting.</p>
+          </div>
+          <div class="cap">
+            <h2>Repeatable processes</h2>
+            <p>Turn recurring work into reusable tooling and automated runbooks that peer architects adopted across accounts.</p>
+          </div>
+        </div>
+
+        <div class="proof">
+          <span class="tag">VCP: VCF Architect</span>
+          <span class="tag">CompTIA Security+</span>
+          <span class="tag">ITIL 4 Foundation</span>
+          <span class="tag">MBA candidate, UMD Smith</span>
+        </div>
+      </div>
+      <aside class="seeking">
+        <h2>What drives me</h2>
+        <ul>
+          <li>Owning high-stakes federal programs end to end</li>
+          <li>Being the executive voice that connects engineers and leadership</li>
+          <li>Supporting the mission in cleared environments</li>
+          <li>Thriving under pressure and growing through it</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="journey" id="journey">
+    <div class="wrap">
+      <p class="section-label">Experience</p>
+      <h2>The journey so far</h2>
+      <div class="timeline">
+        <div class="step">
+          <div class="pin"></div>
+          <div class="yr">2018</div>
+          <h3>B.S., Business Administration &amp; Information Systems</h3>
+          <div class="org">Towson University</div>
+          <p>Both halves of the job: how the technology works and why the business funds it.</p>
+        </div>
+        <div class="step">
+          <div class="pin"></div>
+          <div class="yr">2019</div>
+          <h3>Virtualization Team Lead</h3>
+          <div class="org">Department of Defense</div>
+          <p>Technical lead for the organization, directing a team of engineers and advising leadership on cost, staffing, and schedule.</p>
+        </div>
+        <div class="step">
+          <div class="pin"></div>
+          <div class="yr">2021</div>
+          <h3>Senior Consultant</h3>
+          <div class="org">Broadcom</div>
+          <p>On-site technical subject matter expert for federal enterprise mission customers, leading readiness, continuity, and disaster recovery designs.</p>
+        </div>
+        <div class="step now">
+          <div class="pin"></div>
+          <div class="yr">2023 – Present</div>
+          <h3>Senior Architect</h3>
+          <div class="org">Broadcom</div>
+          <p>Lead technical advisor on strategic federal and defense accounts.</p>
+        </div>
+        <div class="step future">
+          <div class="pin"></div>
+          <div class="yr">Present – 2028</div>
+          <h3>MBA</h3>
+          <div class="org">UMD Robert H. Smith School</div>
+          <p>Building the business foundation for program leadership: finance, strategy, and operations.</p>
+        </div>
+      </div>
+      <div class="headed">
+        <p class="headed-label">Where I'm headed</p>
+        <p class="headed-statement">Helping federal agencies put AI to work on their most critical problems, including the ones no one has solved yet.</p>
+        <p class="headed-note">Responsible AI adoption in government needs what I already do every day: clear requirements, secure and compliant delivery, and leaders who understand what they're deciding.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Kunthaka P. Nilaweera</div>
+</footer>
+
+</body>
+</html>
